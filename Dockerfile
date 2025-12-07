@@ -1,14 +1,6 @@
-ARG version
-FROM almalinux:${version:-8}
-
-ARG NAME
-ARG COURSE
-
-RUN echo "course is ${COURSE}, name is ${NAME}"
-
-
-ENV NAME=${NAME} \
-    COURSE=${COURSE}
+FROM almalinux:8
+RUN yum install nginx -y  
+CMD [ "nginx", "-g", "demon off;" ]
 
 
 
