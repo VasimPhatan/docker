@@ -1,4 +1,4 @@
-FROM almalinux:8  #this is alternative to centos 8
+FROM almalinux  #this is alternative to centos 8
 LABEL NAME=WEB
 RUN yum install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
