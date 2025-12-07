@@ -7,6 +7,9 @@ ARG COURSE
 RUN echo "course is ${COURSE}, name is ${NAME}"
 
 
+ENV NAME=${NAME} \
+    COURSE=${COURSE}
+
 
 
 
