@@ -1,4 +1,3 @@
 FROM almalinux:8
-RUN useradd vasim
-USER vasim
-RUN  echo "hello world" >/tmp/vasim.txt
+RUN cd /tmp
+RUN ehco "hello world" >/tmp/hello.txt
